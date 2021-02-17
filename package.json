@@ -19,6 +19,7 @@
     "serve": "browser-sync start --server --files 'index.html, assets/styles/main.css, assets/scripts/index.js'"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "bootstrap": "^4.6.0",
+    "sass": "^1.32.7"
   }
 }
