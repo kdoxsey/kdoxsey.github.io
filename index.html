@@ -20,7 +20,7 @@
 </head>
 
 <body class="bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-gray">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand text-black" href="#">Kevin Doxsey</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#">design</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://lunarette.bandcamp.com/releases">music</a>
+                        <a class="nav-link" href="#" id="lunarette">lunarette </a>
                     </li>
                 </ul>
 
@@ -45,13 +45,13 @@
         </div>
     </nav>
 
+    <!-- <div><button id="test">click</button></div> -->
     <main>
-        <section class="container-fluid text-center projects">
+        <section class="projects container-fluid text-center">
 
             <div class="project container-fluid text-center bg-dark py-5" id="gameplan">
                 <div class="project-name text-right display-1">
-                    <a href="https://kdoxsey.github.io/gameplan-project-client/"
-                        class="text-decoration-none text-info ">gameplan</a>
+                    <a href="https://kdoxsey.github.io/gameplan-project-client/" target="_blank" class="text-decoration-none text-info">gameplan</a>
                 </div>
                 <h5 class="text-white text-right project-description">a to-do list at conception, gameplan can be used in any situation
                     where a user needs to visualize nested data. it was designed to resemble the file-directory used in
@@ -60,7 +60,7 @@
 
             <div class="project container-fluid text-center bg-secondary py-5" id="contaxt">
                 <div class="project-name text-left display-1">
-                    <a href="https://kdoxsey.github.io/contaxt/" class="text-decoration-none text-black ">contaxt</a>
+                    <a href="https://kdoxsey.github.io/contaxt/" target="_blank" class="text-decoration-none text-black ">contaxt</a>
                 </div>
                 <h5 class="text-black text-left project-description">a map-based rolodex using GoogleMaps API.
                 </h5>
@@ -68,7 +68,7 @@
 
             <div class="project container-fluid text-center py-5 bg-dark" id="scrumi">
                 <div class="project-name text-right display-1">
-                    <a href="https://pojo-boys.github.io/Scrumi/#/"
+                    <a href="https://pojo-boys.github.io/Scrumi/#/" target="_blank"
                         class="text-decoration-none" id="scrumi-name">scrumi</a>
                 </div>
                 <h5 class="text-black text-right project-description">A scrum-based project manager that allows users to create tasks and
@@ -77,15 +77,26 @@
 
             <div class="project container-fluid text-center bg-secondary py-5" id="tip-tap-toe">
                 <div class="project-name text-left display-1">
-                    <a href="https://kdoxsey.github.io/tip-tap-toe/" class="text-decoration-none" id="tip-tap-toe-name">tip-tap-toe</a>
+                    <a href="https://kdoxsey.github.io/tip-tap-toe/" target="_blank" class="text-decoration-none" id="tip-tap-toe-name">tip-tap-toe</a>
                 </div>
                 <h5 class="text-black text-left project-description">the classic game of tic-tac-toe. keep track of your total number of games with authentication.
                 </h5>
             </div>
-
-
         </section>
     </main>
+    <footer class="footer text-center text-white fixed-bottom">
+        <ul>
+            <li>
+                <img src="assets/styles/img/github.png" class="footer-icons">
+            </li>
+            <li>
+                <img id="instagram" src="assets/styles/img/instagram.png" class="footer-icons">
+            </li>
+            <li>
+                <img id="mail" src="assets/styles/img/mail.png" class="footer-icons">
+            </li>
+        </ul>
+    </footer>
 
 
 </body>

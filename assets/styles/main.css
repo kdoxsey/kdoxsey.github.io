@@ -27,10 +27,6 @@ body:before {
   );
 }
 
-// Not demo related
-
-// Thanks to Corey Ginnivan for some design advice
-
 html {
   margin: 0;
   font-family: "Muli", sans-serif;
@@ -63,8 +59,13 @@ main {
   border-radius: 10px;
   color: #6b6b6b;
   margin: 40px 0;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+.navbar,
+.footer {
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #gameplan {
@@ -83,9 +84,10 @@ main {
   background: url(img/tip-tap-toe-thumbnail.png);
 }
 
-/* .project {
-  margin-bottom: 155px;
-} */
+.projects {
+  margin-bottom: 8vh;
+  margin-right: 8vh;
+}
 
 .project-name {
   background: rgba(0, 0, 0, 0.7);
@@ -111,4 +113,31 @@ main {
 
 #scrumi-name {
   color: rgb(196, 71, 221);
+}
+
+.footer-icons {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+/* #instagram {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+} */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  justify-content: space-around;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
