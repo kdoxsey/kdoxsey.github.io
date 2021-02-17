@@ -68,19 +68,19 @@ main {
 }
 
 #gameplan {
-  background: url(public/gameplan-thumbnail-2.png);
+  background: url(img/gameplan-thumbnail-2.png);
 }
 
 #contaxt {
-  background: url(public/contaxt-thumbnail.png);
+  background: url(img/contaxt-thumbnail.png);
 }
 
 #scrumi {
-  background: url(public/scrumi-thumbnail.png);
+  background: url(img/scrumi-thumbnail.png);
 }
 
 #tip-tap-toe {
-  background: url(public/tip-tap-toe-thumbnail.png);
+  background: url(img/tip-tap-toe-thumbnail.png);
 }
 
 /* .project {
