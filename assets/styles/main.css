@@ -65,23 +65,23 @@ main {
 
 .navbar,
 .footer {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 #gameplan {
-  background: url(img/gameplan-thumbnail-2.png);
+  background: url(img/gameplan-thumbnail-3.png) no-repeat top center;
 }
 
 #contaxt {
-  background: url(img/contaxt-thumbnail.png);
+  background: url(img/contaxt-thumbnail.png) no-repeat top center;
 }
 
 #scrumi {
-  background: url(img/scrumi-thumbnail.png);
+  background: url(img/scrumi-thumbnail-3.png) no-repeat top center;
 }
 
 #tip-tap-toe {
-  background: url(img/tip-tap-toe-thumbnail.png);
+  background: url(img/tip-tap-toe-thumbnail.png) no-repeat top center;
 }
 
 .projects {
