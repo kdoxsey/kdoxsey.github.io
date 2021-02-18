@@ -43,6 +43,8 @@ html {
 
 body {
   margin: 0;
+  /* margin-top: 18px; */
+  padding-bottom: 11px;
   font-size: 1.15rem;
   line-height: 1.4em;
   /* height: 100vh; */
@@ -56,10 +58,10 @@ body {
   box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.2);
 }
 
-main,
+/* main,
 header {
   box-sizing: border-box;
-}
+} */
 
 main {
   background-color: #f7f7f7;
@@ -74,7 +76,7 @@ main {
 .navbar,
 .footer {
   background: rgba(0, 0, 0, 0.7);
-  position: fixed;
+  /* position: fixed; */
 }
 
 #message {
@@ -137,8 +139,7 @@ main {
 /**/
 
 .projects {
-  margin-bottom: 8vh;
-  margin-right: 8vh;
+  width: 65vw;
 }
 
 .project-name {

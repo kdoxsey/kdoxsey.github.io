@@ -16,8 +16,8 @@
 
     
     <meta charset="UTF-8">
-    <title>Kevin Doxsey</title>
-    <link rel="shortcut icon" type="image/jpg" href="/assets/styles/img/me.png" />
+    <title>kevin doxsey</title>
+    <link rel="shortcut ion" type="image/jpg" href="/assets/styles/img/me.png" />
     <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
     <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
 </head>
@@ -57,10 +57,9 @@
     <img id="me" src="assets/styles/img/me.png" class="text-right"> -->
 
 
-    <nav class="navbar sticky-top">
-    <h2 class="text-white" id="message">hi, i'm kevin doxsey.</h2>
-    <h6 class="text-white" id="message">i live in new york city where i like to make things. enjoy my portfolio</h6>
-    </nav>
+    <!-- <nav class="navbar sticky-top navbar-expand-lg text-white">
+        navbar
+    </nav> -->
 
     <!-- <nav class="nav">
         <div class="container">
@@ -83,12 +82,54 @@
         </div>
     </nav> -->
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" id="home">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
 
-    <div id="test-button"><button>test</button></div>
+    <!-- <div id="test-button"><button>test</button></div> -->
 
+    <div id="me">
+    </div>
+    <!-- <img class="container-fluid" id="me-2" src="/assets/styles/img/me-2.png">
+    <img class="container-fluid" id="me-3" src="/assets/styles/img/me-3.png"> -->
+    
 
-    <main>
         <section class="projects container-fluid text-center">
+            <section class="projects container-fluid text-center">
 
             <div class="project container-fluid text-center bg-dark py-5" id="gameplan">
                 <div class="project-name text-right display-2">
@@ -124,7 +165,6 @@
                 </h5>
             </div>
         </section>
-    </main>
     <footer class="footer text-center text-white fixed-bottom">
             <a href="https://github.com/kdoxsey" target="_blank">
                 <img id="github" src="assets/styles/img/github.png" class="footer-icons">
@@ -144,57 +184,40 @@
 </body>
 
     <script type="text/javascript">
-        // $(document).ready(function (event) {
-            // event.preventDefault()
-            // $('#test-button').on("click", alert('clicked'))
+            // $('.projects').hide()
+            /* test button start */
             document.getElementById('test-button').addEventListener('click', handleClick)
             function handleClick(event) {
             event.preventDefault()
             alert('test button clicked')
             }
-            $(".navbar").hide();
+            /**/
 
-                $("html").mousemove(function (event) {
-                    $(".navbar").show();
+            /* navbar and footer show/hide with mouse move */
+                // $(".navbar").hide();
+                // $(".footer").hide()
 
-                    myStopFunction();
-                    myFunction();
-                });
+                // $("html").mousemove(function (event) {
+                //     $(".navbar").show();
+                //     $(".footer").show();
 
-                function myFunction() {
-                    myVar = setTimeout(function () {
-                        $(".navbar").fadeOut();
-                    }, 500);
-                }
-                function myStopFunction() {
-                    if (typeof myVar != 'undefined') {
-                        clearTimeout(myVar);
-                    }
-                }
+                //     myStopFunction();
+                //     myFunction();
+                // });
 
-                $(".navbar").hide();
-                $(".footer").hide()
+                // function myFunction() {
+                //     myVar = setTimeout(function () {
+                //         $(".navbar").fadeOut();
+                //         $(".footer").fadeOut();
+                //     }, 1000);
+                // }
+                // function myStopFunction() {
+                //     if (typeof myVar != 'undefined') {
+                //         clearTimeout(myVar);
+                //     }
+                // }
+                /**/
 
-                $("html").mousemove(function (event) {
-                    $(".navbar").show();
-                    $(".footer").show();
-
-                    myStopFunction();
-                    myFunction();
-                });
-
-                function myFunction() {
-                    myVar = setTimeout(function () {
-                        $(".navbar").fadeOut();
-                        $(".footer").fadeOut();
-                    }, 500);
-                }
-                function myStopFunction() {
-                    if (typeof myVar != 'undefined') {
-                        clearTimeout(myVar);
-                    }
-                }
-        // });
         </script>
 
     
