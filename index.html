@@ -23,6 +23,7 @@
 </head>
 
 <body class="bg-dark">
+    
     <!-- <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand text-black" href="#">Kevin Doxsey</a>
@@ -54,11 +55,38 @@
     <div class="text-white display-4 text-center mx-4" id="message2"> -->
     <!-- </div>
     <img id="me" src="assets/styles/img/me.png" class="text-right"> -->
+
+
     <nav class="navbar sticky-top">
     <h2 class="text-white" id="message">hi, i'm kevin doxsey.</h2>
     <h6 class="text-white" id="message">i live in new york city where i like to make things. enjoy my portfolio</h6>
     </nav>
+
+    <!-- <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav> -->
+
+
     <div id="test-button"><button>test</button></div>
+
+
     <main>
         <section class="projects container-fluid text-center">
 
@@ -124,6 +152,48 @@
             event.preventDefault()
             alert('test button clicked')
             }
+            $(".navbar").hide();
+
+                $("html").mousemove(function (event) {
+                    $(".navbar").show();
+
+                    myStopFunction();
+                    myFunction();
+                });
+
+                function myFunction() {
+                    myVar = setTimeout(function () {
+                        $(".navbar").fadeOut();
+                    }, 500);
+                }
+                function myStopFunction() {
+                    if (typeof myVar != 'undefined') {
+                        clearTimeout(myVar);
+                    }
+                }
+
+                $(".navbar").hide();
+                $(".footer").hide()
+
+                $("html").mousemove(function (event) {
+                    $(".navbar").show();
+                    $(".footer").show();
+
+                    myStopFunction();
+                    myFunction();
+                });
+
+                function myFunction() {
+                    myVar = setTimeout(function () {
+                        $(".navbar").fadeOut();
+                        $(".footer").fadeOut();
+                    }, 500);
+                }
+                function myStopFunction() {
+                    if (typeof myVar != 'undefined') {
+                        clearTimeout(myVar);
+                    }
+                }
         // });
         </script>
 
