@@ -58,6 +58,7 @@
     <h2 class="text-white" id="message">hi, i'm kevin doxsey.</h2>
     <h6 class="text-white" id="message">i live in new york city where i like to make things. enjoy my portfolio</h6>
     </nav>
+    <div id="test-button"><button>test</button></div>
     <main>
         <section class="projects container-fluid text-center">
 
@@ -114,15 +115,17 @@
 
 </body>
 
-    <!-- <script type="text/javascript">
-        $(document).ready(function () {
-            $('.projects').hide()
-            $("#message").html("hi, i'm kevin doxsey").hide().fadeIn().delay(3000).fadeOut()
-            $("#message2").html('i live in new york city where i like to make things. enjoy my portfolio').hide().delay(4000).fadeIn().delay(3000).fadeOut() 
-            $('.projects').delay(9000).show();
-            $('.footer').delay(9000).fadeIn();
-        });
-        </script> -->
+    <script type="text/javascript">
+        // $(document).ready(function (event) {
+            // event.preventDefault()
+            // $('#test-button').on("click", alert('clicked'))
+            document.getElementById('test-button').addEventListener('click', handleClick)
+            function handleClick(event) {
+            event.preventDefault()
+            alert('test button clicked')
+            }
+        // });
+        </script>
 
     
 </html>
