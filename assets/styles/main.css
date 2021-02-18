@@ -42,6 +42,7 @@ html {
 /**/
 
 body {
+  min-height: 100vh;
   margin: 0;
   /* margin-top: 18px; */
   padding-bottom: 11px;
@@ -63,7 +64,7 @@ header {
   box-sizing: border-box;
 } */
 
-main {
+/* main {
   background-color: #f7f7f7;
   padding: 0px;
   border-radius: 10px;
@@ -71,12 +72,17 @@ main {
   margin: 40px 0;
   margin-left: 15vw;
   margin-right: 15vw;
-}
+} */
+
+/* section {
+  margin-top: 20px;
+} */
 
 .navbar,
 .footer {
   background: rgba(0, 0, 0, 0.7);
-  /* position: fixed; */
+  position: fixed;
+  width: 100vw;
 }
 
 #message {
@@ -206,4 +212,24 @@ ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+}
+
+.lunarette-body {
+  width: 65vw;
+}
+
+.design-body {
+  width: 65vw;
+}
+
+.lunarette-pic {
+  width: 65vw;
+}
+
+.home {
+  width: 65vw;
+}
+
+.bandcamp-embedded {
+  padding-top: 20vh;
 }
