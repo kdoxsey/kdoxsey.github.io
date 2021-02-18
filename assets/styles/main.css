@@ -96,31 +96,31 @@ main {
 
 /* app title colors + their hover colors*/
 .gameplan-name {
-  color: rgb(56, 131, 131);
+  color: rgb(58, 255, 255);
 }
 .gameplan-name:hover {
-  color: rgb(58, 255, 255);
+  color: rgb(56, 131, 131);
 }
 
 .contaxt-name {
-  color: rgb(61, 84, 212);
+  color: rgb(88, 166, 255);
 }
 .contaxt-name:hover {
-  color: rgb(88, 166, 255);
+  color: rgb(61, 84, 212);
 }
 
 .scrumi-name {
-  color: rgb(131, 62, 145);
+  color: rgb(227, 89, 255);
 }
 .scrumi-name:hover {
-  color: rgb(227, 89, 255);
+  color: rgb(131, 62, 145);
 }
 
 .tip-tap-toe-name {
-  color: rgb(173, 123, 95);
+  color: rgb(255, 174, 123);
 }
 .tip-tap-toe-name:hover {
-  color: rgb(255, 174, 123);
+  color: rgb(173, 123, 95);
 }
 /**/
 
@@ -173,7 +173,7 @@ main {
   margin: 0px;
 }
 
-#instagram {
+#linkedin {
   width: 30px;
   height: 30px;
   /* margin-top: 5px; */
