@@ -45,6 +45,7 @@ body {
   margin: 0;
   font-size: 1.15rem;
   line-height: 1.4em;
+  height: 100vh;
 }
 
 #container {
@@ -73,6 +74,16 @@ main {
 .navbar,
 .footer {
   background: rgba(0, 0, 0, 0.7);
+}
+
+#message {
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#message2 {
+  margin-left: 25vw;
+  margin-right: 25vw;
 }
 
 /* app background images */
