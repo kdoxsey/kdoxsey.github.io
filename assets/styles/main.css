@@ -233,11 +233,29 @@ ul {
   width: 75vw;
 }
 
-.home {
-  width: 75vw;
-  margin-top: 25vh;
-}
-
 .bandcamp-embedded {
   padding-top: 20vh;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#home-text {
+  position: fixed;
+}
+
+#hi-im-kevin {
+  margin-left: 4vw;
+}
+#i-live-in {
+  margin-left: 6.5vw;
+}
+#new-york-city {
+  margin-left: 3.5vw;
+}
+#where-i-like-to {
+  margin-left: 1vw;
 }
