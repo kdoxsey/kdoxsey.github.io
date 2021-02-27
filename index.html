@@ -137,12 +137,58 @@
             </div>
         </section>
 
+        <section class="email-body">
+        <!-- <form action="https://formspree.io/f/myybalpa" method="POST">
+            <div class="form-group">
+                <label for="user_email">Email address</label>
+                <input type="text" name="_replyto" class="form-control" id="user_email" aria-describedby="emailHelp"
+                    placeholder="email address">
+                <small id="emailHelp" class="form-text text-muted">where can i get in touch with you</small>
+            </div>
+            <div class="form-group">
+                <label for="user_message">whats up?</label>
+                <input type="user_message" name="message" class="form-control" id="user_message" placeholder="sup">
+            </div>
+            <button type="submit" class="btn btn-primary">send</button>
+        </form> -->
+        <form class="form-horizontal" action="/action_page.php">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div> -->
+
     <footer class="footer text-center text-white fixed-bottom">
             <a href="https://github.com/kdoxsey" target="_blank">
                 <img id="github" src="assets/styles/img/github.png" class="footer-icons">
             </a>
 
-            <a href="mailto:kdoxsey@gmail.com" target="_blank">
+            <a href="#">
                 <img id="email" src="assets/styles/img/mail.png" class="footer-icons">
                 </a>
 
@@ -181,8 +227,9 @@
     </script>
 
     <script type="text/javascript">
+    //default hiddens
             $('.projects').hide()
-            // $('.home').hide()
+            $('.email-body').hide()
             $('.bandcamp-embedded').hide()
             $('.lunarette-body').hide()
             $('.design-body').hide()
@@ -190,6 +237,7 @@
 
 
     <script type="text/javascript">
+    // home
             document.getElementById('home').addEventListener('click', handleClick)
                 function handleClick(event) {
                     event.preventDefault()
@@ -202,6 +250,7 @@
 
 
     <script type="text/javascript">
+    // applications
             document.getElementById('applications').addEventListener('click', handleClick)
                 function handleClick(event) {
                     event.preventDefault()
@@ -213,6 +262,7 @@
     </script>
 
     <script type="text/javascript">
+    // lunarette
         document.getElementById('lunarette').addEventListener('click', handleClick)
         function handleClick(event) {
             event.preventDefault()
@@ -225,6 +275,7 @@
     </script>
 
     <script type="text/javascript">
+    // design
         document.getElementById('design').addEventListener('click', handleClick)
         function handleClick(event) {
             event.preventDefault()
@@ -234,6 +285,20 @@
             $('.design-body').show()
         }    
     </script>
+
+        <script type="text/javascript">
+        // email
+            document.getElementById('email').addEventListener('click', handleClick)
+            function handleClick(event) {
+                event.preventDefault()
+                alert('clicked email')
+                $('.home').hide()
+                $('.projects').hide()
+                $('.lunarette-body').hide()
+                $('.design-body').hide()
+                $('.email-body').show()
+            }    
+        </script>
 
     
 
