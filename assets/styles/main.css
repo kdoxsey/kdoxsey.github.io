@@ -272,3 +272,12 @@ ul {
 .email-body {
   margin-top: 30vh;
 }
+
+form {
+  width: 50vw;
+}
+
+.email-body {
+  display: flex;
+  justify-content: center;
+}

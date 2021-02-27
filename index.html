@@ -138,50 +138,19 @@
         </section>
 
         <section class="email-body">
-        <!-- <form action="https://formspree.io/f/myybalpa" method="POST">
+            <form action="https://formspree.io/f/myybalpa" method="POST">
+                <div id="contact-message" class="text-center">for all inquiries, contact me here or at <a href="mailto:kdoxsey@gmail.com">kdoxsey@gmail.com</a></div>
+                <div class="form-group">
+                    <input type="text" name="_replyto" class="form-control" id="user_email" aria-describedby="emailHelp"
+                        placeholder="email address">
+                </div>
             <div class="form-group">
-                <label for="user_email">Email address</label>
-                <input type="text" name="_replyto" class="form-control" id="user_email" aria-describedby="emailHelp"
-                    placeholder="email address">
-                <small id="emailHelp" class="form-text text-muted">where can i get in touch with you</small>
-            </div>
-            <div class="form-group">
-                <label for="user_message">whats up?</label>
-                <input type="user_message" name="message" class="form-control" id="user_message" placeholder="sup">
+                <input type="text-area" name="message" class="form-control" id="user_message" placeholder="what can i do for you?">
             </div>
             <button type="submit" class="btn btn-primary">send</button>
-        </form> -->
-        <form class="form-horizontal" action="/action_page.php">
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="pwd">Password:</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Remember me</label>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-            </div>
         </form>
+
     </section>
-    <!-- <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div> -->
 
     <footer class="footer text-center text-white fixed-bottom">
             <a href="https://github.com/kdoxsey" target="_blank">
@@ -233,6 +202,7 @@
             $('.bandcamp-embedded').hide()
             $('.lunarette-body').hide()
             $('.design-body').hide()
+            $('.email-body').hide()
     </script>
 
 
@@ -245,6 +215,7 @@
                     $('.design-body').hide()
                     $('.home').show()
                     $('.lunarette-body').hide()
+                    $('.email-body').hide()
                 }
     </script>
 
@@ -258,6 +229,7 @@
                     $('.design-body').hide()
                     $('.projects').show()
                     $('.lunarette-body').hide()
+                    $('.email-body').hide()
                 }    
     </script>
 
@@ -271,6 +243,7 @@
             $('.design-body').hide()
             $('.bandcamp-embedded').show()
             $('.lunarette-body').show()
+            $('.email-body').hide()
         }    
     </script>
 
@@ -283,22 +256,22 @@
             $('.projects').hide()
             $('.lunarette-body').hide()
             $('.design-body').show()
+            $('.email-body').hide()
         }    
     </script>
 
-        <script type="text/javascript">
-        // email
-            document.getElementById('email').addEventListener('click', handleClick)
-            function handleClick(event) {
-                event.preventDefault()
-                alert('clicked email')
-                $('.home').hide()
-                $('.projects').hide()
-                $('.lunarette-body').hide()
-                $('.design-body').hide()
-                $('.email-body').show()
-            }    
-        </script>
+    <script type="text/javascript">
+    // email
+        document.getElementById('email').addEventListener('click', handleClick)
+        function handleClick(event) {
+            event.preventDefault()
+            $('.home').hide()
+            $('.projects').hide()
+            $('.lunarette-body').hide()
+            $('.design-body').hide()
+            $('.email-body').show()
+        }    
+    </script>
 
     
 
