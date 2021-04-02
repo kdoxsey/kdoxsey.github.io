@@ -96,6 +96,9 @@ header {
 }
 
 /* app background images */
+#travel-cents {
+  background: url(img/travel-cents-thumbnail.png) no-repeat top center;
+}
 #gameplan {
   background: url(img/gameplan-thumbnail-3.png) no-repeat top center;
   color: rgb(28, 161, 161);
@@ -115,6 +118,12 @@ header {
 /**/
 
 /* app title colors + their hover colors*/
+.travel-cents-name {
+  color: white;
+}
+.travel-cents-name:hover {
+  color: grey;
+}
 .gameplan-name {
   color: rgb(58, 255, 255);
 }
